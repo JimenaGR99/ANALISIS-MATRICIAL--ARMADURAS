@@ -1,0 +1,9 @@
+nodo->elementos se unen, viga columna-> punto de interseccion -> especificacion 3 nodos -> grados libertad (x,y)
+Hay direccion del elemento N()->F() donde N= inicial, F=final;
+lamda_x=(xf-xn)/L
+lamda_y=(yf-yn)/L
+
+matrices-> por cada elemento
+se reunen todas para construir una matriz general
+
+matriz[4][4], hay una formnula para construir esa matriz, cosenos directores (punot i, punto f, )
