@@ -2,23 +2,21 @@ from dash import html
 import dash_bootstrap_components as dbc
 
 
-from .Descripcion.armaduras import armaduras
+from .Descripcion.armaduras import *
 
 
 navegador = dbc.Container(
     [
-        html.H1('ANÁLISIS MATRICIAL'),
+        html.H1('ANÁLISIS MATRICIAL'),  
         html.H2('MÉTODO DE LA RIGIDEZ PARA ARMADURAS'),
         dbc.Row(
             [
-                dbc.Col(armaduras, md = 12, style={'background-color':'lavender'})
+                dbc.Col(armaduras, md = 12, style={'background-color':'#F3CCFF'}), #Se agrega una breve descripción del método de armaduras
+                dbc.Col(Informacion_importante, md = 12, style={'background-color':'#ffab74'})
 
             ]   
                 ),
-        html.H3('Información a tener en cuenta:'),
-        html.Label('*La aplicación calcula fuerzas, desplazamientos y cargas de armaduras compuestas por 3 nodos y 2 elementos'),
-        html.Label('*Los nodos se deben ingresar en orden ascendente')
-
+        
 
     ]
     

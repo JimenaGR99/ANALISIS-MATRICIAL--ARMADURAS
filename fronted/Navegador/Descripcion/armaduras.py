@@ -12,3 +12,13 @@ armaduras = dbc.Container(
 
 )
 
+Informacion_importante = dbc.Container(
+    [
+        html.H1('Información a tener en cuenta:'),  #Se agrega la información que el usuario debe tener presente para el uso de la app
+        html.Label('*La aplicación calcula fuerzas, desplazamientos y cargas de armaduras compuestas por 3 nodos y 2 elementos'),
+        html.Label('*Los nodos se deben ingresar en orden ascendente'),
+        html.Label('*Antes de ingresar los datos de área, módulo de elasticidad y cargas, el usuario debe verificar que el sistema de unidades esté unificado en todos los datos solicitados, evitando así, errores en los calculos.')
+    ]
+
+)
+
